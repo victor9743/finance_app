@@ -7,6 +7,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body id="page-top">
@@ -740,8 +741,6 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
-    <%= javascript_importmap_tags %>
     <%= javascript_include_tag "application", "jquery.min", "jquery.easing.min" , "sb-admin-2.min" , "Chart.min", "chart-area-demo", "chart-pie-demo", "data-turbo-track": "reload" %>
 
 </body>
