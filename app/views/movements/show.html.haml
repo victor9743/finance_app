@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Description:
+  = @movement.description
+%p
+  %b Movement type:
+  = @movement.movement_type
+%p
+  %b Value:
+  = @movement.value
+%p
+  %b User:
+  = @movement.user
+
+= link_to 'Edit', edit_movement_path(@movement)
+\|
+= link_to 'Back', movements_path
